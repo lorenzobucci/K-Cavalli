@@ -32,5 +32,9 @@ def disposizione_kCavalli(n: int, k: int):
     kCavalli.add(sum([m[i][j] for i in range(n) for j in range(n)]) == k)  # Vincolo per il numero di cavalli totali
 
     solver: nj.NBJ_STD_Solver = kCavalli.load('Mistral')
-    solver.solve()
-    print(m)
+
+    if (solver.solve()):
+        print("In una scacchiera %dx%d una soluzione che dispone %d cavalli senza attacchi è :" % (n, n, k))
+        print(m)
+    else:
+        print("In una scacchiera %dx%d è impossibile disporre %d cavalli senza attacchi!" % (n, n, k))
