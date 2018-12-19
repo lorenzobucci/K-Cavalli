@@ -33,7 +33,7 @@ def disposizione_kCavalli(n: int, k: int):
 
     solver: nj.NBJ_STD_Solver = kCavalli.load('Mistral')
 
-    if (solver.solve()):
+    if solver.solve():
         print("In una scacchiera %dx%d una soluzione che dispone %d cavalli senza attacchi è :" % (n, n, k))
         print(m)
     else:
