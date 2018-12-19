@@ -1,8 +1,8 @@
-#Disposizione cavalli su scacchiera
+# Disposizione cavalli su scacchiera
 
 Il software permette di trovare, su una scacchiera *n x n*, una disposizione di un numero arbitrario *k* di cavalli senza attacchi reciproci.
 
-###Uso:
+### Uso:
 
 1.  Dal file *kCavalli.py* chiamare la funzione `disposizione_kCavalli(n: int, k: int)`
 
