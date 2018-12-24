@@ -1,4 +1,5 @@
 import Numberjack as nj
+from timeit import default_timer as timer
 
 
 def disposizione_kCavalli(n: int, k: int):
@@ -21,8 +22,8 @@ def disposizione_kCavalli(n: int, k: int):
 
     solver: nj.NBJ_STD_Solver = kCavalli.load('MiniSat')
 
-    if solver.solve():
-        print("In una scacchiera %dx%d una soluzione che dispone %d cavalli senza attacchi è :" % (n, n, k))
-        print(m)
-    else:
-        print("In una scacchiera %dx%d è impossibile disporre %d cavalli senza attacchi!" % (n, n, k))
+    start = timer()
+    esito = solver.solve()
+    end = timer()
+
+    return [end - start, esito]
