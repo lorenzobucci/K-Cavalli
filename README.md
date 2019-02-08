@@ -22,3 +22,10 @@ Il software permette di trovare, su una scacchiera *n x n*, una disposizione di 
     * zlib1g-dev
     * libgmp-dev
  * Numberjack: `pip install Numberjack`
+ 
+ ### Test e relazione:
+ 
+ * La cartella *test* contiene uno script per l'esecuzione di un test che verifica il tempo di risoluzione del problema al variare di *n* e di *k*. Tale script fa uso di una versione modificata di *kCavalli.py* che non stampa niente a video ma restituisce il tempo di risoluzione del problema e la sua soddisfacibilità. Tutti i dati vengono salvati in un file Excel.
+ 
+ * La cartella *relazione* contiene la relazione in pdf e i dati Excel prodotti dal test.
+ 
