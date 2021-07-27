@@ -1,3 +1,6 @@
+## Questo repository è stato archiviato e non verrà più mantenuto
+
+
 # Disposizione cavalli su scacchiera
 
 Il software permette di trovare, su una scacchiera *n x n*, una disposizione di un numero arbitrario *k* di cavalli senza attacchi reciproci.
